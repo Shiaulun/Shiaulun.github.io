@@ -21,50 +21,17 @@
        document.getElementById('showbox').innerHTML = '現在時間: '+h+'時'+m+'分'+s+'秒';
        setTimeout('ShowTime()',1000);
       }
-     </script>
-     <script>
-      function Check(chk){
-          var chkbox=document.getElementsByName(chk);
-          if(document.myform.Check_ctr.checked==true){
-              for (i = 0; i < chkbox.length; i++){
-                  chkbox[i].checked = true ;}
-          }else{
-              for (i = 0; i < chkbox.length; i++){
-                  chkbox[i].checked = false ;}
-          }
-      }
      </script>    
      <script>
+      $(function(){
+      $("#CheckAll").click(function(){
+      $("input:checkbox").prop("checked","checked");
+      });
 
-$(function(){
-
-$("#CheckAll").click(function(){
-
-
- 
-$("input:checkbox").prop("checked","checked");
-
-});
-
-$("#CheckNo").click(function(){
-
-$("input:checkbox").removeAttr("checked");
-
-});
-
-$("#CheckRev").click(function(){
-
-$("input:checkbox").each(function(){
-
-this.checked=!this.checked;
-
-});
-
-});
-
-});
-
-</script>
+      $("#CheckNo").click(function(){
+      $("input:checkbox").removeAttr("checked");
+      });
+     </script>
  
      <body onload="ShowTime()">
      <div id="showbox"></div>

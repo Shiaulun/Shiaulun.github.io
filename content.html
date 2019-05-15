@@ -6,10 +6,21 @@
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          
-         <style>
-         
-         
-         </style>    
+<style>
+.ccle {
+margin: 100px auto;/*div對齊效果*/
+text-align: center;/*display: inline對齊效果*/
+}
+.ccle div {
+display: inline-block;/*讓div並排*/ 
+vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
+width: 338px;
+height: 500px;
+border: 10px solid white;
+border-radius:3px;margin: 2px;
+}
+
+</style>    
         
      </head>
      <script language="JavaScript">
@@ -49,7 +60,64 @@
                   
           </div>
      </nav>
-       <div id="slideshow" class="carousel slide" data-ride="carousel">
+      
+
+   
+    <div style="width:1015px;height:500px;background-color:#F5F5F5">
+        <div  style="display:block;background-color:white;width:338px;height:500px;border:10px solid white;float:left">
+                  
+              
+                   
+                  <a href="1.html" class="thumbnail" style="text-align:center">
+                       
+                   <img src="https://i.imgur.com/liHqugu.png" alt="...">  
+                   <input type="checkbox" value="1" name="Product_1"> 中式餐點
+                  </a>
+                  <a href="https://deliveroo.tw/zh-tw/cuisines/dessert-takeaway/taipei" class="thumbnail" style="text-align:center">
+                   <img src="https://i.imgur.com/UpHpkdv.png" alt="..."> 
+                   <input type="checkbox" value="1" name="Product_1"> 飲品
+                  </a>    
+                 
+        </div>
+        <div  style="display:block;background-color:white;width:338px;height:500px;border:10px solid white;float:left">
+            
+                  <a href="https://deliveroo.tw/zh-tw/cuisines/american-takeaway/taipei" class="thumbnail" style="text-align:center">
+                   <img src="https://i.imgur.com/qyFwBZv.png" alt="...">     
+                   <input type="checkbox" value="1" name="Product_1"> 西式餐點
+                  </a>    
+                  <a href="https://deliveroo.tw/zh-tw/cuisines/dessert-takeaway/taipei" class="thumbnail" style="text-align:center">
+                   <img src="https://i.imgur.com/7bSSHy8.png" alt="...">
+                   <input type="checkbox" value="1" name="Product_1"> 下午茶點心、甜點
+                  </a>
+                 
+        </div>
+        <div  style="display:block;background-color:white;width:338px;height:500px;border:10px solid white;float:left">
+            
+                  <a href="https://deliveroo.tw/zh-tw/cuisines/japanese-takeaway/taipei" class="thumbnail" style="text-align:center">
+                   <img src="https://i.imgur.com/PrN1IrT.png" alt="...">
+                   <input type="checkbox" value="1" name="Product_1"> 日、韓餐點       
+                  </a> 
+                  <input style="background-color:DodgerBlue;" type="button" id="CheckAll" value="全選" />  <br><br>
+                  <input style="background-color:DodgerBlue;" type="button" id="CheckNo" value="全不選" /> 
+                  <form>
+                   <select name="YourLocation">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                   </select>
+                  </form>
+         
+        </div>
+    </div>
+      
+         
+      
+   </div>
+     
+ 
+    </div>
+    <div style="clear:left" id="slideshow" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
              
               <div class="item active"><img src="https://i.imgur.com/wHN7An7.png" alt="">
@@ -83,62 +151,6 @@
             <li data-target="#slideshow" data-slide-to="3"></li>
         </ol>
         </div>
-
-   
-    <div style="width:1015px;height:500px;background-color:#F5F5F5">
-        <div  style="display:block;background-color:white;width:338px;height:500px;border:10px solid white;float:left">
-                  
-              
-                   
-                  <a href="1.html" class="thumbnail" style="text-align:center">
-                       
-                   <img src="https://i.imgur.com/liHqugu.png" alt="...">  
-                   <input type="checkbox" value="1" name="Product_1"> 中式餐點
-                  </a>
-                  <a href="https://deliveroo.tw/zh-tw/cuisines/dessert-takeaway/taipei" class="thumbnail" style="text-align:center">
-                   <img src="https://i.imgur.com/UpHpkdv.png" alt="..."> 
-                   <input type="checkbox" value="1" name="Product_1"> 飲品
-                  </a>    
-                 
-        </div>
-        <div  style="display:block;background-color:white;width:338px;height:500px;border:10px solid white;float:left">
-            
-                  <a href="https://deliveroo.tw/zh-tw/cuisines/american-takeaway/taipei" class="thumbnail" style="text-align:center">
-                   <img src="https://i.imgur.com/qyFwBZv.png" alt="...">     
-                   <input type="checkbox" value="1" name="Product_1"> 西式餐點
-                  </a>    
-                  <a href="https://deliveroo.tw/zh-tw/cuisines/dessert-takeaway/taipei" class="thumbnail" style="text-align:center">
-                   <img src="https://i.imgur.com/7bSSHy8.png" alt="...">
-                   <input type="checkbox" value="1" name="Product_1"> 下午茶點心、甜點
-                  </a>
-                 
-        </div>
-        <div  style="display:block;background-color:white;width:338px;height:500px;border:10px solid white;clear:both">
-            
-                  <a href="https://deliveroo.tw/zh-tw/cuisines/japanese-takeaway/taipei" class="thumbnail" style="text-align:center">
-                   <img src="https://i.imgur.com/PrN1IrT.png" alt="...">
-                   <input type="checkbox" value="1" name="Product_1"> 日、韓餐點       
-                  </a> 
-                  <input style="background-color:DodgerBlue;" type="button" id="CheckAll" value="全選" />  <br><br>
-                  <input style="background-color:DodgerBlue;" type="button" id="CheckNo" value="全不選" /> 
-                  <form>
-                   <select name="YourLocation">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                   </select>
-                  </form>
-         
-        </div>
-    </div>
-      
-         
-      
-   </div>
-     
- 
-    </div>
                
        
     

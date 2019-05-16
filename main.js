@@ -12,7 +12,7 @@ function login() {
     passwordValue === '123456') {
    resultOutput.style.color = '#0f0'
    window.location.assign("1.html")
-   resultOutput.innerText = 'Hi, welcome JS 20 Min'
+   resultOutput.innerText = 'Hi, welcome Shiaulun'
   } else {
    resultOutput.style.color = '#f00'
    resultOutput.innerText = '請檢查帳號密碼是否正確'

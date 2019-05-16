@@ -11,7 +11,6 @@ function login() {
   if (accountValue === 's123456' &&
     passwordValue === '123456') {
    resultOutput.style.color = '#0f0'
-   window.location.assign("1.html")
    resultOutput.innerText = 'Hi, welcome Shiaulun'
   } else {
    resultOutput.style.color = '#f00'

@@ -11,6 +11,7 @@ function login() {
   if (accountValue === 's123456' &&
     passwordValue === '123456') {
    resultOutput.style.color = '#0f0'
+   window.location.href='1.html'
    resultOutput.innerText = 'Hi, welcome JS 20 Min'
   } else {
    resultOutput.style.color = '#f00'

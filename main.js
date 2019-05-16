@@ -2,6 +2,7 @@ const loginButton = document.getElementById('login')
 const accountInput = document.getElementById('account')
 const passwordInput = document.getElementById('password')
 const resultOutput = document.getElementById('result')
+const window.location.href="1.html"
 function login() {
  resultOutput.style.color = '#00f'
  resultOutput.innerText = 'Login..'
@@ -11,7 +12,7 @@ function login() {
   if (accountValue === 's123456' &&
     passwordValue === '123456') {
    resultOutput.style.color = '#0f0'
-   window.location.href='1.html'
+   window.location.href
    resultOutput.innerText = 'Hi, welcome JS 20 Min'
   } else {
    resultOutput.style.color = '#f00'

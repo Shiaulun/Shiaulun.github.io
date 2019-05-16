@@ -2,11 +2,10 @@ const loginButton = document.getElementById('login')
 const accountInput = document.getElementById('account')
 const passwordInput = document.getElementById('password')
 const resultOutput = document.getElementById('result')
-const window.location.href="1.html"
 function login() {
  resultOutput.style.color = '#00f'
  resultOutput.innerText = 'Login..'
- window.location.href='1.html'
+
  setTimeout(function() {
   const accountValue = accountInput.value
     passwordValue = passwordInput.value
@@ -15,6 +14,7 @@ function login() {
    resultOutput.style.color = '#0f0'
    
    resultOutput.innerText = 'Hi, welcome Shiaulun'
+   window.location.assign("1.html")
   } else {
    resultOutput.style.color = '#f00'
    resultOutput.innerText = '請檢查帳號密碼是否正確'

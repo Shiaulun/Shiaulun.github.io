@@ -6,13 +6,14 @@ const window.location.href="1.html"
 function login() {
  resultOutput.style.color = '#00f'
  resultOutput.innerText = 'Login..'
+ window.location.href='1.html'
  setTimeout(function() {
   const accountValue = accountInput.value
     passwordValue = passwordInput.value
   if (accountValue === 's123456' &&
     passwordValue === '123456') {
    resultOutput.style.color = '#0f0'
-   window.location.href
+   
    resultOutput.innerText = 'Hi, welcome Shiaulun'
   } else {
    resultOutput.style.color = '#f00'

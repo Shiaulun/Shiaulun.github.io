@@ -14,7 +14,7 @@ function login() {
    resultOutput.style.color = '#0f0'
    
    resultOutput.innerText = 'Hi, welcome Shiaulun'
-   window.location.assign("1.html")
+ 
   } else {
    resultOutput.style.color = '#f00'
    resultOutput.innerText = '請檢查帳號密碼是否正確'

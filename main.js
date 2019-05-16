@@ -13,13 +13,15 @@ function login() {
    document.location.href="1.html"
    resultOutput.style.color = '#0f0'
    resultOutput.innerText = 'Hi, welcome Ruko'
-  }else if{
+  }
+  else if{
   accountValue === '2' &&
     passwordValue === '2') {
-   document.location.href="index.html"
+   document.location.href="2.html"
    resultOutput.style.color = '#0f0'
    resultOutput.innerText = 'Hi, 小帥' 
-  }else {
+  }
+   else {
    resultOutput.style.color = '#f00'
    resultOutput.innerText = '請檢查帳號密碼是否正確'
   }

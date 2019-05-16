@@ -9,8 +9,8 @@ function login() {
  setTimeout(function() {
   const accountValue = accountInput.value
     passwordValue = passwordInput.value
-  if (accountValue === 's123456' &&
-    passwordValue === '123456') {
+  if (accountValue === '123' &&
+    passwordValue === '123') {
    document.location.href="1.html"
    resultOutput.style.color = '#0f0'
    resultOutput.innerText = 'Hi, welcome Shiaulun'

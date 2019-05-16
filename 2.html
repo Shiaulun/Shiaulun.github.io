@@ -1,21 +1,121 @@
-const loginButton = document.getElementById('login')
-const accountInput = document.getElementById('account')
-const passwordInput = document.getElementById('password')
-const resultOutput = document.getElementById('result')
-function login() {
- resultOutput.style.color = '#00f'
- resultOutput.innerText = 'Login..'
- setTimeout(function() {
-  const accountValue = accountInput.value
-    passwordValue = passwordInput.value
-  if (accountValue === 's123456' &&
-    passwordValue === '123456') {
-   resultOutput.style.color = '#0f0'
-   resultOutput.innerText = 'Hi, welcome JS 20 Min'
-  } else {
-   resultOutput.style.color = '#f00'
-   resultOutput.innerText = '請檢查帳號密碼是否正確'
-  }
- }, 2000)
+   
+<html>     
+ 
+     <head>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         
+<style>
+.ccle {
+  margin: 50px auto;/*div對齊效果*/
+  text-align: center;/*display: inline對齊效果*/
 }
-loginButton.addEventListener('click', login)
+
+.ccle div {
+  display: inline-block;/*讓div並排*/ 
+  vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
+  width: 220px;
+  height: 220px;
+  border: 10px solid white;
+  border-radius:3px;margin: 2px;
+  }
+#IMG_1{
+　position:absolute;
+　top:10px;
+　left:10px;
+　background-color:#53E355;
+　z-index:1;
+}
+</style>    
+        
+     </head>
+     <script language="JavaScript">
+      function ShowTime(){
+       var NowDate=new Date();
+       var h=NowDate.getHours();
+       var m=NowDate.getMinutes();
+       var s=NowDate.getSeconds();　
+       document.getElementById('showbox').innerHTML = '現在時間: '+h+'時'+m+'分'+s+'秒';
+       setTimeout('ShowTime()',1000);
+      }
+     </script>    
+     <script>
+      $(function(){
+      $("#CheckAll").click(function(){
+      $("input:checkbox").attr("checked","checked");
+      });
+
+      $("#CheckNo").click(function(){
+      $("input:checkbox").removeAttr("checked");
+      });
+      });
+     </script>
+ 
+     <body onload="ShowTime()">
+    
+     <div id="showbox"></div>
+<div style="background-color:#30FFFF;top:800px;margin:0 auto;border-radius:20px;width:1000px;high:1200px;font-size:40px;color:#FFFF00;text-align:center;line-height:100px;">今日我最薦</div> 
+    <div class="ccle">
+      <div>       
+        
+         <img src="https://i.imgur.com/cMNiWtA.png" alt="..."> 迷客夏
+         <form>
+         <select name="YourLocation">
+          <option value="1">珍珠奶茶</option>
+          <option value="1">檸檬冰茶</option>
+          <option value="1">綠茶</option>
+         
+         </select>  <input type="submit" value="確認">
+         </form>  
+      </div>   
+      <div>          
+         <img src="https://i.imgur.com/zRv3yZu.png" alt="..."> 綠蓋茶館 
+         <form>
+         <select name="YourLocation">
+          <option value="1">多多綠茶</option>
+          <option value="1">珍珠奶茶</option>
+          <option value="1">紅茶</option>
+         </select>  <input type="submit" value="確認">
+         </form>      
+      </div>   
+      <div>          
+         <img src="https://i.imgur.com/MANwHTy.png" alt="..."> 一芳水果茶
+         <form>
+         <select name="YourLocation">
+          <option value="1">黑糖珍珠鮮奶茶</option>
+          <option value="1">熱可可</option>
+          <option value="1">金萱茶</option>
+         </select>  <input type="submit" value="確認">
+         </form> 
+      </div> 
+      <div>      
+         <img src="https://i.imgur.com/CNogcrF.png" alt="..."> COCO都可
+         <form>
+         <select name="YourLocation">
+            <option value="1">波霸奶茶</option>
+          <option value="1">檸檬冰茶</option>
+          <option value="1">綠茶</option>
+          
+         </select>  <input type="submit" value="確認">
+         </form> 
+      </div>
+      <div>          
+         <img src="https://i.imgur.com/djOaX53.png" alt="..."> 沐白小農牧場  
+         <form>
+         <select name="YourLocation">
+          <option value="1">檸檬綠茶</option>
+          <option value="1">鐵觀音鮮奶茶</option>
+          <option value="1">冰莓醋飲</option>
+         </select>  <input type="submit" value="確認">
+         </form> 
+      </div>
+    </div>
+
+     
+    </body>
+
+
+
+</html>
+

@@ -8,12 +8,18 @@ function login() {
  setTimeout(function() {
   const accountValue = accountInput.value
     passwordValue = passwordInput.value
-  if (accountValue === '123' &&
-    passwordValue === '123') {
+  if (accountValue === '1' &&
+    passwordValue === '1') {
    document.location.href="1.html"
    resultOutput.style.color = '#0f0'
-   resultOutput.innerText = 'Hi, welcome Shiaulun'
-  } else {
+   resultOutput.innerText = 'Hi, welcome Ruko'
+  }else if{
+  accountValue === '2' &&
+    passwordValue === '2') {
+   document.location.href="index.html"
+   resultOutput.style.color = '#0f0'
+   resultOutput.innerText = 'Hi, 小帥' 
+  }else {
    resultOutput.style.color = '#f00'
    resultOutput.innerText = '請檢查帳號密碼是否正確'
   }

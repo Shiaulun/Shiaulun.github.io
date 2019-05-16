@@ -2,7 +2,6 @@ const loginButton = document.getElementById('login')
 const accountInput = document.getElementById('account')
 const passwordInput = document.getElementById('password')
 const resultOutput = document.getElementById('result')
-const jump = document.location.href="1.html"
 function login() {
  resultOutput.style.color = '#00f'
  resultOutput.innerText = 'Login..'

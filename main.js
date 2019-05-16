@@ -8,15 +8,12 @@ function login() {
  setTimeout(function() {
   const accountValue = accountInput.value
     passwordValue = passwordInput.value
-  if (accountValue === '1' &&
-    passwordValue === '1') {
+  if (accountValue === '1' && passwordValue === '1') {
    document.location.href="1.html"
    resultOutput.style.color = '#0f0'
    resultOutput.innerText = 'Hi, welcome Ruko'
   }
-  else if(
-  accountValue === '2' &&
-    passwordValue === '2') {
+  else if (accountValue === '2' && passwordValue === '2') {
    document.location.href="2.html"
    resultOutput.style.color = '#0f0'
    resultOutput.innerText = 'Hi, 小帥' 

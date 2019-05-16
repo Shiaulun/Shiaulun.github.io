@@ -14,7 +14,7 @@ function login() {
    resultOutput.style.color = '#0f0'
    resultOutput.innerText = 'Hi, welcome Ruko'
   }
-  else if{
+  else if(
   accountValue === '2' &&
     passwordValue === '2') {
    document.location.href="2.html"

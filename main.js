@@ -11,12 +11,12 @@ function login() {
   if (accountValue === '1' && passwordValue === '1') {
    document.location.href="1.html"
    resultOutput.style.color = '#0f0'
-   resultOutput.innerText = 'Hi, welcome Ruko'
+   resultOutput.innerText = '～登入中～'
   }
   else if (accountValue === '2' && passwordValue === '2') {
    document.location.href="2.html"
    resultOutput.style.color = '#0f0'
-   resultOutput.innerText = 'Hi, 小帥' 
+   resultOutput.innerText = '～登入中～' 
   }
    else {
    resultOutput.style.color = '#f00'
